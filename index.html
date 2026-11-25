@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Walima Invitation · Hannan &amp; Aiman</title>
-<meta name="description" content="You are cordially invited to the Walima of Hannan &amp; Aiman · 20 December 2026 · Rehmat Banquet Hall, Lahore">
-<meta property="og:title" content="Walima Invitation · Hannan &amp; Aiman">
-<meta property="og:description" content="20 December 2026 · 1:00 PM to 4:00 PM · Rehmat Banquet Hall, Shalimar Town, Lahore">
+<title>Wedding Invitation · Hannan &amp; Aiman</title>
+<meta name="description" content="You are cordially invited to the wedding of Hannan &amp; Aiman · December 2026">
+<meta property="og:title" content="Wedding Invitation · Hannan &amp; Aiman">
+<meta property="og:description" content="Tap to open your personal invitation">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#EDF1EC; --surface:#FFFFFF; --ink:#13241D; --muted:#5B6B63; --line:#D5DDD6;
-  --accent:#0E3D2F; --accent-ink:#F7F1E3; --gold:#A8833F; --field:#F7F9F6; --wa:#1F8F4E; --wa-ink:#FFFFFF;
-  --guest-bg:#061A13; --guest-ink:#ECE6D6; --guest-muted:#A9BBAF;
+  --bg:#F4F1EA; --surface:#FFFFFF; --ink:#2A2116; --muted:#6F6250; --line:#E3DACB;
+  --accent:#2A2116; --accent-ink:#FFFDF8; --gold:#A8803A; --field:#FBF9F4; --wa:#1F8F4E; --wa-ink:#FFFFFF;
+  --guest-bg:#F7F3EA; --guest-ink:#2A2116; --guest-muted:#7A6A52;
   color-scheme: light;
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);
@@ -23,14 +23,16 @@
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#08140F; --surface:#10221A; --ink:#ECE6D6; --muted:#9AAAA1; --line:#24382E;
-    --accent:#C9A45C; --accent-ink:#0B2A20; --gold:#D8B76E; --field:#0B1A13; --wa:#2FB566; --wa-ink:#06150D;
+    --bg:#15120D; --surface:#1F1B14; --ink:#F1EADB; --muted:#B3A68F; --line:#3A3226;
+    --accent:#D8B76E; --accent-ink:#1A150E; --gold:#D8B76E; --field:#18140F; --wa:#2FB566; --wa-ink:#06150D;
+    --guest-bg:#15120D; --guest-ink:#F1EADB; --guest-muted:#B3A68F;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#08140F; --surface:#10221A; --ink:#ECE6D6; --muted:#9AAAA1; --line:#24382E;
-  --accent:#C9A45C; --accent-ink:#0B2A20; --gold:#D8B76E; --field:#0B1A13; --wa:#2FB566; --wa-ink:#06150D;
+  --bg:#15120D; --surface:#1F1B14; --ink:#F1EADB; --muted:#B3A68F; --line:#3A3226;
+  --accent:#D8B76E; --accent-ink:#1A150E; --gold:#D8B76E; --field:#18140F; --wa:#2FB566; --wa-ink:#06150D;
+  --guest-bg:#15120D; --guest-ink:#F1EADB; --guest-muted:#B3A68F;
   color-scheme: dark;
 }
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -38,45 +40,43 @@ html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .hidden{display:none !important}
 
-/* host */
 .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 48px;
   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:40px;align-items:start}
-h1{font:500 2rem/1.15 "Bodoni Moda","Didot","Bodoni 72",Georgia,serif;margin:0 0 6px;letter-spacing:-.01em}
-.lede{color:var(--muted);margin:0 0 24px;max-width:56ch}
+h1{font:600 2rem/1.15 Lora,Georgia,serif;margin:0 0 6px;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 24px;max-width:58ch}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:18px}
 .panel h2{font:600 1rem/1.3 system-ui,sans-serif;margin:0 0 4px}
 .panel .sub{color:var(--muted);font-size:.88rem;margin:0 0 14px}
-textarea,input[type=text]{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-textarea{resize:vertical;line-height:1.6}
+textarea{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px 14px;resize:vertical;line-height:1.6}
 #list{min-height:170px}
-#tmpl{min-height:160px;font-size:.92rem}
+#tmpl{min-height:150px;font-size:.92rem}
 :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-.row2{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;margin-top:14px}
+.row2{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;margin-top:14px}
 .seg{display:flex;gap:6px;flex-wrap:wrap}
 .seg label{position:relative}
 .seg input{position:absolute;opacity:0;inset:0}
 .seg span{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;font-size:.9rem;cursor:pointer;background:var(--field)}
 .seg input:checked+span{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .seg input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
-.check{display:flex;align-items:center;gap:10px;font-size:.95rem;cursor:pointer}
-.check input{width:18px;height:18px;accent-color:var(--gold)}
+.check{display:inline-flex;align-items:center;gap:8px;font-size:.95rem;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--gold);margin:0}
 .count{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 12px}
-.count strong{font-size:1rem}
 .count span{color:var(--muted);font-size:.88rem}
 .guests{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.guest{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.guest{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer}
 .guest.on{background:color-mix(in srgb,var(--gold) 10%,transparent)}
 .g-name{font-weight:600;overflow-wrap:anywhere}
 .g-meta{grid-column:1;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}
-.g-warn{color:#B4532A;font-size:.8rem}
-.g-acts{grid-column:2;grid-row:1 / span 2;display:flex;gap:6px;align-items:center}
-.wa,.ghost{display:inline-flex;align-items:center;gap:6px;font:600 .88rem/1 system-ui,sans-serif;padding:10px 12px;border-radius:9px;text-decoration:none;cursor:pointer;white-space:nowrap}
-.wa{background:var(--wa);color:var(--wa-ink);border:0}
+.g-acts{grid-column:2;grid-row:1 / span 2;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.g-acts .check{font-size:.88rem;padding:8px 10px;border:1px solid var(--line);border-radius:9px}
+.wa,.ghost{display:inline-flex;align-items:center;font:600 .88rem/1 system-ui,sans-serif;padding:10px 12px;border-radius:9px;text-decoration:none;cursor:pointer;white-space:nowrap}
+.wa{background:var(--wa);color:var(--wa-ink);border:1px solid var(--wa)}
 .ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
-.sent .wa{background:transparent;color:var(--wa);border:1px solid var(--wa)}
+.sent .wa{background:transparent;color:var(--wa)}
 .empty{color:var(--muted);padding:18px 4px;margin:0}
 .stage{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
-.card-frame{border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(6,26,19,.55),0 2px 6px rgba(6,26,19,.2);background:#061A13}
+.stage .seg{justify-content:center;margin-bottom:12px}
+.card-frame{border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -30px rgba(90,66,24,.45),0 2px 6px rgba(90,66,24,.15)}
 .card-frame img{display:block;width:100%;height:auto;max-width:100%}
 .under{text-align:center;color:var(--muted);font-size:.85rem;margin:12px 0 0}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:.9rem;z-index:20}
@@ -85,27 +85,26 @@ textarea{resize:vertical;line-height:1.6}
   .stage{position:static;max-width:420px;margin:0 auto;width:100%}
 }
 
-/* guest view */
 body.guest-mode{background:var(--guest-bg);color:var(--guest-ink)}
-.guest-view{min-height:100%;display:flex;flex-direction:column;align-items:center;padding:20px 14px 36px}
-.guest-view .card-frame{width:100%;max-width:560px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
-.g-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px;width:100%;max-width:560px}
+.guest-view{display:flex;flex-direction:column;align-items:center;gap:40px;padding:20px 14px 40px}
+.event{width:100%;max-width:560px}
+.g-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
 .g-btn{flex:1 1 200px;display:inline-flex;justify-content:center;align-items:center;padding:14px 16px;border-radius:999px;
-  font:600 .95rem/1 system-ui,sans-serif;text-decoration:none;cursor:pointer;border:1px solid #C9A45C;color:#F6E3A8;background:transparent}
-.g-btn.primary{background:linear-gradient(180deg,#E7C982,#B98E45);color:#0B2A20;border-color:transparent}
-.g-note{color:var(--guest-muted);font-size:.85rem;margin:12px 0 0;text-align:center;min-height:1.2em}
-.owner-bar{margin-bottom:14px;font-size:.88rem}
-.owner-bar a{color:#F6E3A8}
+  font:600 .95rem/1 system-ui,sans-serif;text-decoration:none;cursor:pointer;border:1px solid #B8913F;color:var(--guest-ink);background:transparent}
+.g-btn.primary{background:linear-gradient(180deg,#E7C982,#B98E45);color:#2A2116;border-color:transparent}
+.g-note{color:var(--guest-muted);font-size:.85rem;margin:10px 0 0;text-align:center;min-height:1.2em}
 @media (prefers-reduced-motion:no-preference){
-  .guest-view .card-frame{animation:rise .7s ease-out both}
+  .event{animation:rise .7s ease-out both}
+  .event + .event{animation-delay:.15s}
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 }
 </style>
-</head><body>
+</head>
+<body>
 <main class="wrap" id="host">
   <div>
-    <h1>Walima invitation</h1>
-    <p class="lede">Paste your guest list once. Each guest gets a personal link that opens the card with their own name on it — send it straight from WhatsApp.</p>
+    <h1>Wedding invitations</h1>
+    <p class="lede">Paste your guest list once. Tick Barat for guests invited to both events — they’ll get the Barat and Walima cards. Unticked guests get the Walima card only.</p>
 
     <section class="panel" aria-labelledby="h-list">
       <h2 id="h-list">Guest list</h2>
@@ -118,63 +117,73 @@ body.guest-mode{background:var(--guest-bg);color:var(--guest-ink)}
           <label><input type="radio" name="greet" value="none"><span>No greeting</span></label>
         </div>
         <label class="check"><input type="checkbox" id="family"> “&amp; Family” for everyone</label>
+        <label class="check"><input type="checkbox" id="baratAll"> Barat for everyone</label>
       </div>
     </section>
 
     <section class="panel" aria-labelledby="h-msg">
       <h2 id="h-msg">WhatsApp message</h2>
-      <p class="sub">{name} and {link} are filled in for each guest.</p>
+      <p class="sub">{name}, {events} and {link} are filled in for each guest. {events} names the Barat and Walima, or just the Walima.</p>
       <textarea id="tmpl" spellcheck="false"></textarea>
     </section>
 
     <section class="panel" aria-labelledby="h-send">
-      <div class="count"><strong id="h-send">Send invitations</strong><span id="tally"></span></div>
+      <div class="count"><h2 id="h-send">Send invitations</h2><span id="tally"></span></div>
       <ul class="guests" id="guests"></ul>
     </section>
   </div>
 
   <aside class="stage">
+    <div class="seg hidden" id="pvTabs" role="radiogroup" aria-label="Card to preview">
+      <label><input type="radio" name="pv" value="barat"><span>Barat</span></label>
+      <label><input type="radio" name="pv" value="walima" checked><span>Walima</span></label>
+    </div>
     <div class="card-frame"><img id="hostPreview" alt="Invitation card preview"></div>
     <p class="under" id="previewFor">Tap a guest to preview their card</p>
   </aside>
 </main>
 
-<main class="guest-view hidden" id="guestView">
-  <div class="card-frame"><img id="guestCard" alt=""></div>
-  <div class="g-actions">
-    <button class="g-btn primary" id="gSave">Save card</button>
-    <a class="g-btn" id="gMap" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Rehmat+Banquet+Hall+Shalimar+Town+Lahore">Get directions</a>
-  </div>
-  <p class="g-note" id="gNote"></p>
-</main>
-
+<main class="guest-view hidden" id="guestView"></main>
 <div class="toast hidden" id="toast" role="status"></div>
 
 <script>
 (function(){
 const W = 1080, H = 1800, CX = W/2;
-const SERIF = '"Bodoni Moda","Bodoni 72","Didot","TeX Gyre Bonum",Georgia,serif';
-const SCRIPT = '"Pinyon Script","TeX Gyre Chorus","Snell Roundhand","Apple Chancery",cursive';
+const SERIF = 'Lora,"Libre Baskerville",Georgia,serif';
+const CAPS = 'Cinzel,"Trajan Pro",Lora,Georgia,serif';
+const SCRIPT = '"Great Vibes","TeX Gyre Chorus","Snell Roundhand","Apple Chancery",cursive';
 const ARABIC = 'Amiri,"Noto Naskh Arabic","Geeza Pro","Traditional Arabic",serif';
-const C = {
-  emerald:'#0E3D2F', deep:'#06211A', ivory:'#F7F1E3', sage:'#B7CBB3',
-  gold:'#C9A45C', goldHi:'#F6E3A8', goldLo:'#8A6A2F'
+const T = { ink:'#2A2116', soft:'#6E5734', gold:'#B08A3E', line:'rgba(176,138,62,.55)', panel:'#FFFEFB' };
+
+const CARDS = {
+  barat: {
+    key:'barat', title:'BARAT', invite:'CORDIALLY INVITE YOU TO THE', hosts:'Mr and Mrs Dr Abdur Rehman', joiner:'WITH',
+    weekday:'Saturday', date:'19 Dec', year:'2026',
+    venue:['Le Grand Marquee','And Banquet Hall'], addr:['Model Town Housing Colony,','Sheikhupura'],
+    map:'https://www.google.com/maps/search/?api=1&query=Le+Grand+Marquee+and+Banquet+Hall+Model+Town+Sheikhupura',
+    file:'Barat'
+  },
+  walima: {
+    key:'walima', title:'WALIMA', invite:'CORDIALLY INVITE YOU TO', hosts:'Mr. and Mrs. Dr. Abdur Rehman', joiner:'&',
+    weekday:'', date:'20 Dec', year:'2026',
+    venue:['Rehmat','Banquet Hall'], addr:['Service, 324 Grand Trunk Rd,','Shalimar Town, Lahore'],
+    map:'https://www.google.com/maps/search/?api=1&query=Rehmat+Banquet+Hall+Shalimar+Town+Lahore',
+    file:'Walima'
+  }
 };
 
 function goldGrad(ctx, y0, y1){
   const g = ctx.createLinearGradient(0, y0, 0, y1);
-  g.addColorStop(0, '#F8E7B0'); g.addColorStop(.42, '#D9B56A');
-  g.addColorStop(.58, '#B98E45'); g.addColorStop(1, '#E7C982');
+  g.addColorStop(0, '#C9A04E'); g.addColorStop(.45, '#9A7228');
+  g.addColorStop(.6, '#7E5A1A'); g.addColorStop(1, '#B38A3C');
   return g;
 }
 function goldH(ctx, x0, x1){
   const g = ctx.createLinearGradient(x0, 0, x1, 0);
-  g.addColorStop(0, '#8A6A2F'); g.addColorStop(.3, '#E6C67E');
-  g.addColorStop(.5, '#FBEBB8'); g.addColorStop(.7, '#D2AC62'); g.addColorStop(1, '#8A6A2F');
+  g.addColorStop(0, '#9C7A3A'); g.addColorStop(.3, '#D8B66E');
+  g.addColorStop(.5, '#F0DCA4'); g.addColorStop(.7, '#C9A157'); g.addColorStop(1, '#9C7A3A');
   return g;
 }
-
-/* text with optional manual tracking, centred on x */
 function text(ctx, s, x, y, font, fill, track){
   ctx.font = font; ctx.fillStyle = fill; ctx.textBaseline = 'alphabetic';
   if(!track){ ctx.textAlign = 'center'; ctx.fillText(s, x, y); return ctx.measureText(s).width; }
@@ -185,12 +194,14 @@ function text(ctx, s, x, y, font, fill, track){
   chars.forEach((c,i)=>{ ctx.fillText(c, cx, y); cx += ws[i] + track; });
   return total;
 }
+function trackedWidth(ctx, s, font, track){
+  ctx.font = font; return [...s].reduce((a,c)=>a+ctx.measureText(c).width,0) + track*([...s].length-1);
+}
 function fitFont(ctx, s, family, weight, start, maxW, min){
   let size = start;
   while(size > min){ ctx.font = `${weight} ${size}px ${family}`; if(ctx.measureText(s).width <= maxW) break; size -= 2; }
   return size;
 }
-
 function archPath(ctx, d, keep){
   const L = 112+d, R = W-112-d, S = 450, A = 150+d*1.15, B = H-92-d;
   if(!keep) ctx.beginPath(); ctx.moveTo(L, B); ctx.lineTo(L, S);
@@ -198,7 +209,6 @@ function archPath(ctx, d, keep){
   ctx.bezierCurveTo(CX+190, A+78, R, S-160, R, S);
   ctx.lineTo(R, B); ctx.closePath();
 }
-
 function star8(ctx, x, y, r){
   ctx.beginPath();
   for(let i=0;i<16;i++){
@@ -211,70 +221,62 @@ function star8(ctx, x, y, r){
 function diamond(ctx, x, y, w, h){
   ctx.beginPath(); ctx.moveTo(x, y-h); ctx.lineTo(x+w, y); ctx.lineTo(x, y+h); ctx.lineTo(x-w, y); ctx.closePath();
 }
-
 function divider(ctx, y, half, center){
   ctx.save();
   ctx.strokeStyle = goldH(ctx, CX-half, CX+half); ctx.lineWidth = 1.6;
   const gap = center === 'star' ? 30 : 18;
   ctx.beginPath(); ctx.moveTo(CX-half, y); ctx.lineTo(CX-gap, y); ctx.moveTo(CX+gap, y); ctx.lineTo(CX+half, y); ctx.stroke();
-  ctx.fillStyle = C.gold;
+  ctx.fillStyle = T.gold;
   [CX-half-8, CX+half+8].forEach(x => { diamond(ctx, x, y, 4, 4); ctx.fill(); });
   if(center === 'star'){ star8(ctx, CX, y, 15); ctx.fillStyle = goldGrad(ctx, y-15, y+15); ctx.fill(); }
   else { diamond(ctx, CX, y, 9, 9); ctx.fillStyle = goldGrad(ctx, y-9, y+9); ctx.fill();
-         diamond(ctx, CX, y, 3, 3); ctx.fillStyle = C.deep; ctx.fill(); }
+         diamond(ctx, CX, y, 3, 3); ctx.fillStyle = T.panel; ctx.fill(); }
   ctx.restore();
 }
-
 function lantern(ctx, x, top, len){
   ctx.save();
   const cy = top + len;
-  const glow = ctx.createRadialGradient(x, cy+70, 4, x, cy+70, 120);
-  glow.addColorStop(0, 'rgba(255,214,140,.42)'); glow.addColorStop(1, 'rgba(255,214,140,0)');
+  const glow = ctx.createRadialGradient(x, cy+70, 4, x, cy+70, 110);
+  glow.addColorStop(0, 'rgba(240,196,110,.30)'); glow.addColorStop(1, 'rgba(240,196,110,0)');
   ctx.fillStyle = glow; ctx.fillRect(x-130, cy-60, 260, 260);
   ctx.strokeStyle = goldGrad(ctx, top, cy+150); ctx.lineWidth = 1.6;
   ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, cy); ctx.stroke();
   ctx.beginPath(); ctx.arc(x, cy+6, 6, 0, Math.PI*2); ctx.stroke();
-  // dome
   ctx.beginPath(); ctx.moveTo(x-26, cy+40); ctx.quadraticCurveTo(x-24, cy+16, x, cy+12);
   ctx.quadraticCurveTo(x+24, cy+16, x+26, cy+40); ctx.closePath();
   ctx.fillStyle = goldGrad(ctx, cy+12, cy+40); ctx.fill();
-  // body
   ctx.beginPath(); ctx.moveTo(x-30, cy+40); ctx.lineTo(x+30, cy+40); ctx.lineTo(x+34, cy+110);
   ctx.lineTo(x+16, cy+132); ctx.lineTo(x-16, cy+132); ctx.lineTo(x-34, cy+110); ctx.closePath();
   const inner = ctx.createLinearGradient(0, cy+40, 0, cy+132);
-  inner.addColorStop(0, 'rgba(255,226,160,.55)'); inner.addColorStop(1, 'rgba(255,190,100,.25)');
+  inner.addColorStop(0, 'rgba(250,214,140,.65)'); inner.addColorStop(1, 'rgba(236,180,90,.35)');
   ctx.fillStyle = inner; ctx.fill(); ctx.lineWidth = 2.2; ctx.stroke();
   ctx.lineWidth = 1.2;
   ctx.beginPath(); [-12, 0, 12].forEach(dx => { ctx.moveTo(x+dx, cy+44); ctx.lineTo(x+dx*0.6, cy+128); }); ctx.stroke();
   ctx.beginPath(); ctx.moveTo(x-33, cy+76); ctx.lineTo(x+33, cy+76); ctx.stroke();
-  // finial
   ctx.beginPath(); ctx.moveTo(x, cy+132); ctx.lineTo(x, cy+150); ctx.stroke();
-  diamond(ctx, x, cy+158, 5, 8); ctx.fillStyle = C.gold; ctx.fill();
+  diamond(ctx, x, cy+158, 5, 8); ctx.fillStyle = T.gold; ctx.fill();
   ctx.restore();
 }
-
 function corner(ctx, x, y, sx, sy){
   ctx.save(); ctx.translate(x, y); ctx.scale(sx, sy);
-  ctx.strokeStyle = C.gold; ctx.lineWidth = 1.6;
+  ctx.strokeStyle = T.gold; ctx.lineWidth = 1.6;
   ctx.beginPath(); ctx.moveTo(0, 70); ctx.lineTo(0, 0); ctx.lineTo(70, 0); ctx.stroke();
   ctx.beginPath(); ctx.arc(0, 0, 34, 0, Math.PI/2); ctx.stroke();
   star8(ctx, 0, 0, 13); ctx.fillStyle = goldGrad(ctx, -13, 13); ctx.fill();
   ctx.restore();
 }
 
-function draw(canvas, opts){
+function draw(canvas, opts, card){
   const ctx = canvas.getContext('2d');
   canvas.width = W; canvas.height = H;
 
-  // ground
   const bg = ctx.createRadialGradient(CX, 760, 80, CX, 760, 1150);
-  bg.addColorStop(0, '#14503D'); bg.addColorStop(.6, '#0C372A'); bg.addColorStop(1, '#051A13');
+  bg.addColorStop(0, '#FFFFFF'); bg.addColorStop(.65, '#FAF6EE'); bg.addColorStop(1, '#EFE5D2');
   ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
 
-  // geometric lattice outside the arch
   ctx.save();
   ctx.beginPath(); ctx.rect(0, 0, W, H); archPath(ctx, 0, true); ctx.clip('evenodd');
-  ctx.strokeStyle = 'rgba(214,180,110,.22)'; ctx.lineWidth = 1.1;
+  ctx.strokeStyle = 'rgba(176,138,62,.24)'; ctx.lineWidth = 1.1;
   for(let y = -36; y < H + 72; y += 72){
     for(let x = (Math.round(y/72)%2 ? 36 : 0) - 36; x < W + 72; x += 72){
       star8(ctx, x, y, 20); ctx.stroke();
@@ -283,137 +285,142 @@ function draw(canvas, opts){
   }
   ctx.restore();
 
-  // arch panel
   ctx.save(); archPath(ctx, 0);
+  ctx.shadowColor = 'rgba(120,90,30,.18)'; ctx.shadowBlur = 30;
   const pg = ctx.createRadialGradient(CX, 820, 60, CX, 820, 900);
-  pg.addColorStop(0, '#16533F'); pg.addColorStop(1, '#0B3528');
+  pg.addColorStop(0, '#FFFFFF'); pg.addColorStop(1, '#FBF7EF');
   ctx.fillStyle = pg; ctx.fill();
+  ctx.shadowColor = 'transparent';
   ctx.strokeStyle = goldH(ctx, 112, W-112); ctx.lineWidth = 3.2; ctx.stroke();
-  archPath(ctx, 16); ctx.lineWidth = 1.1; ctx.strokeStyle = 'rgba(214,180,110,.75)'; ctx.stroke();
+  archPath(ctx, 16); ctx.lineWidth = 1.1; ctx.strokeStyle = T.line; ctx.stroke();
   ctx.restore();
 
-  // apex finial
   ctx.save();
-  ctx.strokeStyle = C.gold; ctx.lineWidth = 1.6;
+  ctx.strokeStyle = T.gold; ctx.lineWidth = 1.6;
   ctx.beginPath(); ctx.moveTo(CX, 46); ctx.lineTo(CX, 112); ctx.stroke();
   diamond(ctx, CX, 126, 10, 16); ctx.fillStyle = goldGrad(ctx, 110, 142); ctx.fill();
-  ctx.beginPath(); ctx.arc(CX, 80, 7, 0, Math.PI*2); ctx.fillStyle = C.gold; ctx.fill();
+  ctx.beginPath(); ctx.arc(CX, 80, 7, 0, Math.PI*2); ctx.fillStyle = T.gold; ctx.fill();
   ctx.restore();
 
-  // frame
   ctx.save();
-  ctx.strokeStyle = goldH(ctx, 0, W); ctx.lineWidth = 3;
-  ctx.strokeRect(30, 30, W-60, H-60);
-  ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(214,180,110,.7)';
-  ctx.strokeRect(46, 46, W-92, H-92);
+  ctx.strokeStyle = goldH(ctx, 0, W); ctx.lineWidth = 3; ctx.strokeRect(30, 30, W-60, H-60);
+  ctx.lineWidth = 1; ctx.strokeStyle = T.line; ctx.strokeRect(46, 46, W-92, H-92);
   ctx.restore();
   corner(ctx, 46, 46, 1, 1); corner(ctx, W-46, 46, -1, 1);
   corner(ctx, 46, H-46, 1, -1); corner(ctx, W-46, H-46, -1, -1);
+  lantern(ctx, 168, 47, 52); lantern(ctx, W-168, 47, 52);
 
-  lantern(ctx, 168, 47, 52);
-  lantern(ctx, W-168, 47, 52);
-
-  /* ---- content ---- */
-  let y;
-  // Bismillah
   text(ctx, 'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ', CX, 300, `400 50px ${ARABIC}`, goldGrad(ctx, 255, 310));
   divider(ctx, 342, 120);
-  text(ctx, 'Two Hearts One Journey', CX, 398, `italic 400 34px ${SERIF}`, C.ivory);
+  text(ctx, 'Two Hearts One Journey', CX, 398, `italic 500 34px ${SERIF}`, T.ink);
 
-  // guest plate
   const name = (opts.name || '').trim();
   const shown = name ? name + (opts.family ? ' & Family' : '') : 'Your Guest’s Name';
   const plateTop = 432, plateBot = 560;
   ctx.save();
-  ctx.strokeStyle = 'rgba(214,180,110,.55)'; ctx.lineWidth = 1;
+  ctx.strokeStyle = T.line; ctx.lineWidth = 1;
   ctx.beginPath(); ctx.moveTo(CX-300, plateTop); ctx.lineTo(CX+300, plateTop);
   ctx.moveTo(CX-300, plateBot); ctx.lineTo(CX+300, plateBot); ctx.stroke();
-  ctx.fillStyle = C.gold;
+  ctx.fillStyle = T.gold;
   [[CX-300,plateTop],[CX+300,plateTop],[CX-300,plateBot],[CX+300,plateBot]].forEach(([x,yy])=>{diamond(ctx,x,yy,4,4);ctx.fill();});
   ctx.restore();
-  const nameFill = name ? goldGrad(ctx, 470, 540) : 'rgba(247,241,227,.28)';
+  const nameFill = name ? goldGrad(ctx, 470, 540) : 'rgba(42,33,22,.22)';
   if(opts.greet){
-    text(ctx, opts.greet, CX, 486, `400 44px ${SCRIPT}`, C.sage);
-    const s = fitFont(ctx, shown, SERIF, 500, 50, 620, 26);
-    text(ctx, shown, CX, 538, `500 ${s}px ${SERIF}`, nameFill);
+    text(ctx, opts.greet, CX, 488, `400 46px ${SCRIPT}`, T.soft);
+    const s = fitFont(ctx, shown, SERIF, 600, 46, 620, 26);
+    text(ctx, shown, CX, 538, `600 ${s}px ${SERIF}`, nameFill);
   } else {
-    const s = fitFont(ctx, shown, SERIF, 500, 56, 620, 26);
-    text(ctx, shown, CX, 514, `500 ${s}px ${SERIF}`, nameFill);
+    const s = fitFont(ctx, shown, SERIF, 600, 52, 620, 26);
+    text(ctx, shown, CX, 514, `600 ${s}px ${SERIF}`, nameFill);
   }
 
-  // hosts
-  text(ctx, 'Mr. and Mrs. Dr. Abdur Rehman', CX, 640, `500 42px ${SERIF}`, C.ivory);
-  text(ctx, 'CORDIALLY INVITE YOU TO', CX, 692, `500 21px ${SERIF}`, C.sage, 6);
+  text(ctx, card.hosts, CX, 640, `600 40px ${SERIF}`, T.ink);
+  text(ctx, card.invite, CX, 692, `600 22px ${CAPS}`, T.soft, 4);
 
-  // WALIMA
-  y = 840;
   ctx.save();
-  ctx.shadowColor = 'rgba(0,0,0,.35)'; ctx.shadowBlur = 18; ctx.shadowOffsetY = 6;
-  text(ctx, 'WALIMA', CX, y, `500 150px ${SERIF}`, goldGrad(ctx, y-118, y), 10);
+  ctx.shadowColor = 'rgba(120,90,30,.22)'; ctx.shadowBlur = 10; ctx.shadowOffsetY = 3;
+  const tSize = fitFont(ctx, card.title, CAPS, 600, 136, 700, 90);
+  text(ctx, card.title, CX, 838, `600 ${tSize}px ${CAPS}`, goldGrad(ctx, 838-110, 838), 6);
   ctx.restore();
-  text(ctx, 'CEREMONY', CX, 902, `500 28px ${SERIF}`, C.gold, 20);
+  text(ctx, 'CEREMONY', CX, 902, `600 30px ${CAPS}`, T.gold, 16);
   divider(ctx, 950, 180, 'star');
-  text(ctx, 'OF THEIR BELOVED SON', CX, 1004, `500 21px ${SERIF}`, C.sage, 6);
+  text(ctx, 'OF THEIR BELOVED SON', CX, 1004, `600 22px ${CAPS}`, T.soft, 4);
 
-  // couple
   ctx.save();
-  ctx.shadowColor = 'rgba(0,0,0,.3)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 4;
-  text(ctx, 'Hannan', CX, 1128, `400 138px ${SCRIPT}`, C.ivory);
-  text(ctx, '&', CX, 1196, `italic 400 64px ${SERIF}`, goldGrad(ctx, 1150, 1200));
-  text(ctx, 'Aiman', CX, 1300, `400 138px ${SCRIPT}`, C.ivory);
+  ctx.shadowColor = 'rgba(120,90,30,.18)'; ctx.shadowBlur = 8; ctx.shadowOffsetY = 2;
+  text(ctx, 'Hannan', CX, 1128, `400 138px ${SCRIPT}`, goldGrad(ctx, 1030, 1140));
   ctx.restore();
-  // little sprigs beside the ampersand
-  ctx.save(); ctx.strokeStyle = C.gold; ctx.lineWidth = 1.4;
+  let jHalf;
+  if(card.joiner === '&'){
+    text(ctx, '&', CX, 1196, `italic 500 64px ${SERIF}`, T.ink); jHalf = 26;
+  } else {
+    const f = `700 26px ${CAPS}`;
+    jHalf = trackedWidth(ctx, card.joiner, f, 8)/2;
+    text(ctx, card.joiner, CX, 1188, f, T.ink, 8);
+  }
+  ctx.save();
+  ctx.shadowColor = 'rgba(120,90,30,.18)'; ctx.shadowBlur = 8; ctx.shadowOffsetY = 2;
+  text(ctx, 'Aiman', CX, 1300, `400 138px ${SCRIPT}`, goldGrad(ctx, 1200, 1310));
+  ctx.restore();
+  ctx.save(); ctx.strokeStyle = T.gold; ctx.fillStyle = T.gold; ctx.lineWidth = 1.4;
   [-1, 1].forEach(dir => {
-    ctx.beginPath(); ctx.moveTo(CX + dir*44, 1178); ctx.lineTo(CX + dir*150, 1178); ctx.stroke();
-    for(let i=0;i<4;i++){ const lx = CX + dir*(62 + i*24);
-      ctx.beginPath(); ctx.ellipse(lx, 1170, 8, 3.4, dir*-0.6, 0, Math.PI*2); ctx.fillStyle = C.gold; ctx.fill();
+    const s0 = jHalf + 18;
+    ctx.beginPath(); ctx.moveTo(CX + dir*s0, 1178); ctx.lineTo(CX + dir*(s0+106), 1178); ctx.stroke();
+    for(let i=0;i<4;i++){ const lx = CX + dir*(s0 + 18 + i*24);
+      ctx.beginPath(); ctx.ellipse(lx, 1170, 8, 3.4, dir*-0.6, 0, Math.PI*2); ctx.fill();
       ctx.beginPath(); ctx.ellipse(lx, 1186, 8, 3.4, dir*0.6, 0, Math.PI*2); ctx.fill(); }
   });
   ctx.restore();
 
   divider(ctx, 1360, 300);
 
-  // details
   const cols = [CX-262, CX, CX+262], top = 1412;
-  ctx.save(); ctx.strokeStyle = 'rgba(214,180,110,.6)'; ctx.lineWidth = 1;
-  [CX-131, CX+131].forEach(x => { ctx.beginPath(); ctx.moveTo(x, top-20); ctx.lineTo(x, top+120); ctx.stroke();
-    ctx.fillStyle = C.gold; diamond(ctx, x, top+50, 4, 6); ctx.fill(); });
+  ctx.save(); ctx.strokeStyle = T.line; ctx.lineWidth = 1;
+  [CX-131, CX+131].forEach(x => { ctx.beginPath(); ctx.moveTo(x, top-20); ctx.lineTo(x, top+128); ctx.stroke();
+    ctx.fillStyle = T.gold; diamond(ctx, x, top+54, 4, 6); ctx.fill(); });
   ctx.restore();
-  ['DATE','TIME','VENUE'].forEach((t,i)=> text(ctx, t, cols[i], top, `500 19px ${SERIF}`, C.sage, 5));
-  text(ctx, '20 Dec', cols[0], top+58, `500 46px ${SERIF}`, goldGrad(ctx, top+22, top+60));
-  text(ctx, '2026', cols[0], top+100, `400 26px ${SERIF}`, C.ivory, 8);
-  text(ctx, '1:00 PM', cols[1], top+52, `500 36px ${SERIF}`, C.ivory);
-  text(ctx, 'to', cols[1], top+82, `italic 400 22px ${SERIF}`, C.sage);
-  text(ctx, '4:00 PM', cols[1], top+120, `500 36px ${SERIF}`, C.ivory);
-  text(ctx, 'Rehmat', cols[2], top+46, `500 32px ${SERIF}`, goldGrad(ctx, top+20, top+50));
-  text(ctx, 'Banquet Hall', cols[2], top+82, `500 30px ${SERIF}`, goldGrad(ctx, top+56, top+86));
-  text(ctx, 'Service, 324 Grand Trunk Rd,', cols[2], top+112, `400 17px ${SERIF}`, C.ivory);
-  text(ctx, 'Shalimar Town, Lahore', cols[2], top+134, `400 17px ${SERIF}`, C.ivory);
+  ['DATE','TIME','VENUE'].forEach((t,i)=> text(ctx, t, cols[i], top, `700 19px ${CAPS}`, T.soft, 4));
+  if(card.weekday){
+    text(ctx, card.weekday, cols[0], top+40, `italic 500 24px ${SERIF}`, T.ink);
+    text(ctx, card.date, cols[0], top+88, `600 42px ${SERIF}`, goldGrad(ctx, top+54, top+90));
+    text(ctx, card.year, cols[0], top+124, `600 24px ${SERIF}`, T.ink, 8);
+  } else {
+    text(ctx, card.date, cols[0], top+58, `600 44px ${SERIF}`, goldGrad(ctx, top+22, top+60));
+    text(ctx, card.year, cols[0], top+100, `600 26px ${SERIF}`, T.ink, 8);
+  }
+  text(ctx, '1:00 PM', cols[1], top+52, `600 34px ${SERIF}`, T.ink);
+  text(ctx, 'to', cols[1], top+82, `italic 500 22px ${SERIF}`, T.soft);
+  text(ctx, '4:00 PM', cols[1], top+120, `600 34px ${SERIF}`, T.ink);
+  const vs = Math.min(fitFont(ctx, card.venue[0], SERIF, 600, 30, 244, 20), fitFont(ctx, card.venue[1], SERIF, 600, 30, 244, 20));
+  text(ctx, card.venue[0], cols[2], top+46, `600 ${vs}px ${SERIF}`, goldGrad(ctx, top+20, top+50));
+  text(ctx, card.venue[1], cols[2], top+82, `600 ${vs}px ${SERIF}`, goldGrad(ctx, top+56, top+86));
+  const as = Math.min(fitFont(ctx, card.addr[0], SERIF, 500, 18, 248, 13), fitFont(ctx, card.addr[1], SERIF, 500, 18, 248, 13));
+  text(ctx, card.addr[0], cols[2], top+112, `500 ${as}px ${SERIF}`, T.ink);
+  text(ctx, card.addr[1], cols[2], top+136, `500 ${as}px ${SERIF}`, T.ink);
 
   divider(ctx, 1568, 120);
-  text(ctx, 'Your presence will make', CX, 1614, `italic 400 28px ${SERIF}`, C.ivory);
-  text(ctx, 'our special day even more memorable.', CX, 1650, `italic 400 28px ${SERIF}`, C.ivory);
+  text(ctx, 'Your presence will make', CX, 1614, `italic 500 28px ${SERIF}`, T.ink);
+  text(ctx, 'our special day even more memorable.', CX, 1650, `italic 500 28px ${SERIF}`, T.ink);
 
-  // contact plate on the arch base
   const py = H-92, pw = 420, ph = 58;
   ctx.save();
   ctx.beginPath(); ctx.roundRect(CX-pw/2, py-ph/2, pw, ph, ph/2);
-  ctx.fillStyle = '#0B3528'; ctx.fill();
+  ctx.fillStyle = '#FFFDF8'; ctx.fill();
   ctx.strokeStyle = goldH(ctx, CX-pw/2, CX+pw/2); ctx.lineWidth = 2; ctx.stroke();
   ctx.restore();
-  ctx.font = `500 17px ${SERIF}`; const lw = ctx.measureText('FOR CONTACT:').width + 3*11;
-  ctx.font = `600 26px ${SERIF}`; const nw = ctx.measureText('03214805949').width + 2*10;
+  const lw = trackedWidth(ctx, 'FOR CONTACT:', `700 17px ${CAPS}`, 2);
+  const nw = trackedWidth(ctx, '03214805949', `600 26px ${SERIF}`, 2);
   const startX = CX - (lw + 18 + nw)/2;
-  text(ctx, 'FOR CONTACT:', startX + lw/2, py+7, `500 17px ${SERIF}`, C.sage, 3);
+  text(ctx, 'FOR CONTACT:', startX + lw/2, py+7, `700 17px ${CAPS}`, T.soft, 2);
   text(ctx, '03214805949', startX + lw + 18 + nw/2, py+9, `600 26px ${SERIF}`, goldGrad(ctx, py-12, py+10), 2);
 }
-
 
 /* ---------- links ---------- */
 const BASE = location.href.split('#')[0];
 const TITLES = ['mr','mrs','ms','dr','prof','engr','sh','haji','col','maj','capt','brig','gen'];
-const DEFAULT_TMPL = 'Assalam o Alaikum {name},\n\nWith great joy, we invite you to the Walima of Hannan & Aiman on Sunday, 20 December 2026, 1:00 PM at Rehmat Banquet Hall, Lahore.\n\nYour personal invitation: {link}';
+const DEFAULT_TMPL = 'Assalam o Alaikum {name},\n\nWith great joy, we invite you to {events}.\n\nYour personal invitation: {link}';
+const EVENTS_WALIMA = 'the Walima of Hannan & Aiman on Sunday, 20 December 2026, 1:00 PM at Rehmat Banquet Hall, Lahore';
+const EVENTS_BOTH = 'the Barat of Hannan & Aiman on Saturday, 19 December 2026, 1:00 PM at Le Grand Marquee and Banquet Hall, Sheikhupura, and the Walima on Sunday, 20 December 2026, 1:00 PM at Rehmat Banquet Hall, Lahore';
 
 function parseLine(line, globalFamily){
   let [raw, ...rest] = line.split(',');
@@ -423,13 +430,12 @@ function parseLine(line, globalFamily){
   if(/\s*&\s*family\s*$/i.test(name)){ family = true; name = name.replace(/\s*&\s*family\s*$/i, '').trim(); }
   return { name, phone, family };
 }
-function slugName(name){
-  return name.replace(/[^\p{L}\p{M}\p{N}]+/gu, '-').replace(/^-+|-+$/g, '');
-}
+function slugName(name){ return name.replace(/[^\p{L}\p{M}\p{N}]+/gu, '-').replace(/^-+|-+$/g, ''); }
 function makeHash(g, greet){
   const parts = ['to', slugName(g.name)];
   if(greet !== 'dear') parts.push(greet);
   if(g.family) parts.push('family');
+  if(g.barat) parts.push('barat');
   return parts.join('--');
 }
 function readHash(h){
@@ -443,7 +449,8 @@ function readHash(h){
   return {
     name: words.join(' '),
     greet: flags.includes('respected') ? 'Respected' : flags.includes('none') ? '' : 'Dear',
-    family: flags.includes('family')
+    family: flags.includes('family'),
+    barat: flags.includes('barat')
   };
 }
 function waNumber(p){
@@ -457,7 +464,6 @@ function waNumber(p){
 /* ---------- shared ---------- */
 const $ = id => document.getElementById(id);
 const canvas = document.createElement('canvas');
-let downloads = null, user = null;
 function toBlob(c){ return new Promise(r => c.toBlob(r, 'image/png')); }
 function store(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
 function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
@@ -467,32 +473,40 @@ async function copy(text){
   try{ const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
        document.body.appendChild(ta); ta.select(); const ok = document.execCommand('copy'); ta.remove(); return ok; }catch(e){ return false; }
 }
+function greetLabel(v){ return v === 'dear' ? 'Dear' : v === 'respected' ? 'Respected' : ''; }
 
 /* ---------- host ---------- */
-const listEl = $('list'), tmplEl = $('tmpl'), famEl = $('family'), guestsEl = $('guests');
-let selected = 0, sent = {};
+const listEl = $('list'), tmplEl = $('tmpl'), famEl = $('family'), baratAllEl = $('baratAll'), guestsEl = $('guests');
+let selected = 0, sent = {}, baratOverride = {};
 try{ sent = JSON.parse(load('walima-sent') || '{}') || {}; }catch(e){ sent = {}; }
+try{ baratOverride = JSON.parse(load('wedding-barat') || '{}') || {}; }catch(e){ baratOverride = {}; }
 listEl.value = load('walima-list') || '';
-tmplEl.value = load('walima-tmpl') || DEFAULT_TMPL;
+tmplEl.value = load('wedding-tmpl') || DEFAULT_TMPL;
 famEl.checked = load('walima-family') === '1';
+baratAllEl.checked = load('wedding-barat-all') === '1';
 const savedGreet = load('walima-greet');
 if(savedGreet){ const r = document.querySelector(`input[name=greet][value="${savedGreet}"]`); if(r) r.checked = true; }
 
 function greetVal(){ return document.querySelector('input[name=greet]:checked').value; }
+function pvVal(){ return document.querySelector('input[name=pv]:checked').value; }
 function guests(){
-  return listEl.value.split('\n').map(l => l.trim()).filter(Boolean).map(l => parseLine(l, famEl.checked)).filter(g => g.name);
+  return listEl.value.split('\n').map(l => l.trim()).filter(Boolean).map(l => parseLine(l, famEl.checked)).filter(g => g.name)
+    .map(g => { const k = g.name.toLowerCase(); g.barat = k in baratOverride ? baratOverride[k] : baratAllEl.checked; return g; });
 }
 function message(g, link){
-  return tmplEl.value.replaceAll('{name}', g.name + (g.family ? ' & Family' : '')).replaceAll('{link}', link);
+  return tmplEl.value.replaceAll('{name}', g.name + (g.family ? ' & Family' : ''))
+    .replaceAll('{events}', g.barat ? EVENTS_BOTH : EVENTS_WALIMA).replaceAll('{link}', link);
 }
 
 function hostPreview(){
   const gs = guests(), g = gs[selected] || gs[0];
-  const greet = greetVal();
-  const label = greet === 'dear' ? 'Dear' : greet === 'respected' ? 'Respected' : '';
-  draw(canvas, { name: g ? g.name : '', family: g ? g.family : famEl.checked, greet: label });
+  const showTabs = g ? g.barat : baratAllEl.checked;
+  $('pvTabs').classList.toggle('hidden', !showTabs);
+  const which = showTabs ? pvVal() : 'walima';
+  draw(canvas, { name: g ? g.name : '', family: g ? g.family : famEl.checked, greet: greetLabel(greetVal()) }, CARDS[which]);
   $('hostPreview').src = canvas.toDataURL('image/jpeg', .86);
-  $('previewFor').textContent = g ? `Card for ${g.name}${g.family ? ' & Family' : ''}` : 'Add a guest to preview their card';
+  $('hostPreview').alt = `${CARDS[which].file} card preview`;
+  $('previewFor').textContent = g ? `${CARDS[which].file} card for ${g.name}${g.family ? ' & Family' : ''}` : 'Add a guest to preview their card';
 }
 
 function renderList(){
@@ -513,9 +527,20 @@ function renderList(){
     const nm = document.createElement('div'); nm.className = 'g-name';
     nm.textContent = g.name + (g.family ? ' & Family' : '');
     const meta = document.createElement('div'); meta.className = 'g-meta';
-    meta.textContent = g.phone ? `${g.phone} · ${isSent ? 'Sent' : 'Not sent yet'}` : (isSent ? 'Sent' : 'Not sent yet · pick the contact in WhatsApp');
+    const cardsTxt = g.barat ? 'Barat + Walima' : 'Walima only';
+    meta.textContent = [cardsTxt, g.phone || 'pick contact in WhatsApp', isSent ? 'Sent' : 'Not sent yet'].join(' · ');
     li.append(nm, meta);
+
     const acts = document.createElement('div'); acts.className = 'g-acts';
+    const bl = document.createElement('label'); bl.className = 'check';
+    const bc = document.createElement('input'); bc.type = 'checkbox'; bc.checked = g.barat;
+    bc.setAttribute('aria-label', `Invite ${g.name} to the Barat too`);
+    bl.append(bc, document.createTextNode('Barat'));
+    bl.addEventListener('click', e => e.stopPropagation());
+    bc.addEventListener('change', () => {
+      baratOverride[g.name.toLowerCase()] = bc.checked; store('wedding-barat', JSON.stringify(baratOverride));
+      selected = i; renderList(); hostPreview();
+    });
     const wa = document.createElement('a'); wa.className = 'wa'; wa.target = '_blank'; wa.rel = 'noopener';
     wa.href = `https://wa.me/${waNumber(g.phone)}?text=${encodeURIComponent(message(g, link))}`;
     wa.textContent = isSent ? 'Send again' : 'Send';
@@ -523,67 +548,81 @@ function renderList(){
     const cp = document.createElement('button'); cp.className = 'ghost'; cp.type = 'button'; cp.textContent = 'Copy';
     cp.setAttribute('aria-label', `Copy message for ${g.name}`);
     cp.addEventListener('click', async e => { e.stopPropagation(); toast(await copy(message(g, link)) ? 'Message copied — paste it in WhatsApp' : 'Couldn’t copy here'); });
-    acts.append(wa, cp);
+    acts.append(bl, wa, cp);
     li.append(acts);
     li.addEventListener('click', () => { selected = i; renderList(); hostPreview(); });
     guestsEl.append(li);
   });
-  $('tally').textContent = gs.length ? `${sentCount} of ${gs.length} sent` : '';
+  const baratCount = gs.filter(g => g.barat).length;
+  $('tally').textContent = gs.length ? `${sentCount} of ${gs.length} sent · ${baratCount} with Barat` : '';
 }
 
 let tm;
 function refresh(){
   clearTimeout(tm);
   tm = setTimeout(() => {
-    store('walima-list', listEl.value); store('walima-tmpl', tmplEl.value);
+    store('walima-list', listEl.value); store('wedding-tmpl', tmplEl.value);
     store('walima-family', famEl.checked ? '1' : '0'); store('walima-greet', greetVal());
+    store('wedding-barat-all', baratAllEl.checked ? '1' : '0');
     renderList(); hostPreview();
   }, 120);
 }
 [listEl, tmplEl].forEach(el => el.addEventListener('input', refresh));
 famEl.addEventListener('change', refresh);
+baratAllEl.addEventListener('change', () => { baratOverride = {}; store('wedding-barat', '{}'); refresh(); });
 document.querySelectorAll('input[name=greet]').forEach(r => r.addEventListener('change', refresh));
+document.querySelectorAll('input[name=pv]').forEach(r => r.addEventListener('change', hostPreview));
 
 /* ---------- guest ---------- */
-let guestInfo = null;
+function eventBlock(info, card){
+  const sec = document.createElement('section'); sec.className = 'event';
+  const fr = document.createElement('div'); fr.className = 'card-frame';
+  const img = document.createElement('img');
+  draw(canvas, info, card);
+  img.src = canvas.toDataURL('image/jpeg', .9);
+  img.alt = `${card.file} invitation for ${info.name}${info.family ? ' & Family' : ''}`;
+  fr.append(img);
+  const acts = document.createElement('div'); acts.className = 'g-actions';
+  const save = document.createElement('button'); save.className = 'g-btn primary'; save.textContent = `Save ${card.file} card`;
+  const map = document.createElement('a'); map.className = 'g-btn'; map.target = '_blank'; map.rel = 'noopener';
+  map.href = card.map; map.textContent = 'Get directions';
+  acts.append(save, map);
+  const note = document.createElement('p'); note.className = 'g-note';
+  save.addEventListener('click', async () => {
+    draw(canvas, info, card);
+    const blob = await toBlob(canvas);
+    try{
+      const url = URL.createObjectURL(blob), a = document.createElement('a');
+      a.href = url; a.download = `${card.file}-Invitation-${slugName(info.name) || 'Guest'}.png`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      note.textContent = 'If nothing downloaded, press and hold the card and choose “Save image”.';
+    }catch(e){ note.textContent = 'Press and hold the card, then choose “Save image”.'; }
+  });
+  sec.append(fr, acts, note);
+  return sec;
+}
 function showGuest(info){
-  guestInfo = info;
   document.body.classList.add('guest-mode');
-  $('host').classList.add('hidden'); $('guestView').classList.remove('hidden');
-  draw(canvas, info);
-  $('guestCard').src = canvas.toDataURL('image/jpeg', .9);
-  $('guestCard').alt = `Walima invitation for ${info.name}${info.family ? ' & Family' : ''} — Hannan & Aiman, 20 December 2026, Rehmat Banquet Hall, Lahore`;
-  document.title = `Walima Invitation for ${info.name}`;
-  $('gNote').textContent = '';
+  $('host').classList.add('hidden');
+  const gv = $('guestView'); gv.classList.remove('hidden'); gv.replaceChildren();
+  if(info.barat) gv.append(eventBlock(info, CARDS.barat));
+  gv.append(eventBlock(info, CARDS.walima));
+  document.title = `Wedding Invitation for ${info.name}`;
 }
 function showHost(){
-  guestInfo = null;
   document.body.classList.remove('guest-mode');
   $('guestView').classList.add('hidden'); $('host').classList.remove('hidden');
-  document.title = 'Walima Invitation · Hannan & Aiman';
+  document.title = 'Wedding Invitation · Hannan & Aiman';
   renderList(); hostPreview();
 }
 function route(){ const info = readHash(location.hash); info ? showGuest(info) : showHost(); }
-
-$('gSave').addEventListener('click', async () => {
-  if(!guestInfo) return;
-  draw(canvas, guestInfo);
-  const blob = await toBlob(canvas);
-  const fn = `Walima-Invitation-${slugName(guestInfo.name) || 'Guest'}.png`;
-  try{
-    const url = URL.createObjectURL(blob), a = document.createElement('a');
-    a.href = url; a.download = fn; document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 4000);
-    $('gNote').textContent = 'If nothing downloaded, press and hold the card and choose “Save image”.';
-  }catch(e){ $('gNote').textContent = 'Press and hold the card, then choose “Save image”.'; }
-});
 window.addEventListener('hashchange', route);
 
 route();
-const fontLoads = [`500 150px "Bodoni Moda"`, `italic 400 34px "Bodoni Moda"`, `600 26px "Bodoni Moda"`, `400 138px "Pinyon Script"`, `400 50px Amiri`]
+const fontLoads = [`600 136px Cinzel`, `700 19px Cinzel`, `600 40px Lora`, `500 18px Lora`, `italic 500 34px Lora`, `400 138px "Great Vibes"`, `400 50px Amiri`]
   .map(f => document.fonts.load(f, f.includes('Amiri') ? 'بسم' : 'Aa').catch(()=>{}));
 Promise.race([Promise.all(fontLoads), new Promise(r => setTimeout(r, 4000))]).then(route);
-
 })();
 </script>
 </body>
