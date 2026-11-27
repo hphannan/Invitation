@@ -74,6 +74,9 @@ textarea{width:100%;font:inherit;color:var(--ink);background:var(--field);border
 .ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
 .sent .wa{background:transparent;color:var(--wa)}
 .empty{color:var(--muted);padding:18px 4px;margin:0}
+.sendwith{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 8px}
+.sw-label{font-size:.9rem;font-weight:600}
+#swHint{margin:0 0 14px}
 .stage{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
 .stage .seg{justify-content:center;margin-bottom:12px}
 .card-frame{border-radius:6px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -30px rgba(90,66,24,.45),0 2px 6px rgba(90,66,24,.15)}
@@ -83,6 +86,10 @@ textarea{width:100%;font:inherit;color:var(--ink);background:var(--field);border
 @media (max-width:860px){
   .wrap{grid-template-columns:1fr;gap:24px;padding:20px 16px 40px}
   .stage{position:static;max-width:420px;margin:0 auto;width:100%}
+}
+@media (max-width:560px){
+  .guest{grid-template-columns:1fr}
+  .g-acts{grid-column:1;grid-row:auto;justify-content:flex-start;margin-top:6px}
 }
 
 body.guest-mode{background:var(--guest-bg);color:var(--guest-ink)}
@@ -129,6 +136,15 @@ body.guest-mode{background:var(--guest-bg);color:var(--guest-ink)}
 
     <section class="panel" aria-labelledby="h-send">
       <div class="count"><h2 id="h-send">Send invitations</h2><span id="tally"></span></div>
+      <div class="sendwith">
+        <span class="sw-label" id="swl">Send with</span>
+        <div class="seg" role="radiogroup" aria-labelledby="swl">
+          <label><input type="radio" name="app" value="whatsapp" checked><span>WhatsApp</span></label>
+          <label><input type="radio" name="app" value="business"><span>WhatsApp Business</span></label>
+          <label><input type="radio" name="app" value="share"><span>Choose app</span></label>
+        </div>
+      </div>
+      <p class="sub" id="swHint"></p>
       <ul class="guests" id="guests"></ul>
     </section>
   </div>
@@ -453,6 +469,29 @@ function readHash(h){
     barat: flags.includes('barat')
   };
 }
+const IS_ANDROID = /Android/i.test(navigator.userAgent);
+const IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+function appVal(){ return document.querySelector('input[name=app]:checked').value; }
+function sendHref(g, msg){
+  const num = waNumber(g.phone), text = encodeURIComponent(msg);
+  const web = `https://wa.me/${num}?text=${text}`;
+  const app = appVal();
+  if(IS_ANDROID && app !== 'share'){
+    const pkg = app === 'business' ? 'com.whatsapp.w4b' : 'com.whatsapp';
+    return `intent://send?${num ? `phone=${num}&` : ''}text=${text}#Intent;scheme=whatsapp;package=${pkg};S.browser_fallback_url=${encodeURIComponent(web)};end`;
+  }
+  if(IS_IOS && app === 'business') return `whatsapp://send?${num ? `phone=${num}&` : ''}text=${text}`;
+  return web;
+}
+function sendHint(){
+  const app = appVal(); let t = '';
+  if(app === 'share') t = 'Send opens your phone’s share menu, so you can pick WhatsApp, WhatsApp Business or any other app. Pick the contact there.';
+  else if(app === 'business') t = IS_ANDROID ? 'Send opens WhatsApp Business directly.'
+    : IS_IOS ? 'Send opens WhatsApp Business. If you also have regular WhatsApp installed, your iPhone may open that instead — use Choose app if so.'
+    : 'On a computer, Send opens WhatsApp Web or the desktop app.';
+  else t = IS_ANDROID ? 'Send opens WhatsApp directly.' : '';
+  $('swHint').textContent = t; $('swHint').classList.toggle('hidden', !t);
+}
 function waNumber(p){
   if(!p) return '';
   p = p.replace(/^\+/, '');
@@ -541,10 +580,23 @@ function renderList(){
       baratOverride[g.name.toLowerCase()] = bc.checked; store('wedding-barat', JSON.stringify(baratOverride));
       selected = i; renderList(); hostPreview();
     });
-    const wa = document.createElement('a'); wa.className = 'wa'; wa.target = '_blank'; wa.rel = 'noopener';
-    wa.href = `https://wa.me/${waNumber(g.phone)}?text=${encodeURIComponent(message(g, link))}`;
+    const wa = document.createElement('a'); wa.className = 'wa'; wa.rel = 'noopener';
+    const msg = message(g, link), href = sendHref(g, msg);
+    wa.href = href;
+    if(href.startsWith('https:')) wa.target = '_blank';
     wa.textContent = isSent ? 'Send again' : 'Send';
-    wa.addEventListener('click', e => { e.stopPropagation(); sent[hash] = Date.now(); store('walima-sent', JSON.stringify(sent)); setTimeout(renderList, 300); });
+    const markSent = () => { sent[hash] = Date.now(); store('walima-sent', JSON.stringify(sent)); setTimeout(renderList, 300); };
+    wa.addEventListener('click', async e => {
+      e.stopPropagation();
+      if(appVal() !== 'share') { markSent(); return; }
+      e.preventDefault();
+      if(navigator.share){
+        try{ await navigator.share({ text: msg }); markSent(); }
+        catch(err){ if(err && err.name !== 'AbortError') toast(await copy(msg) ? 'Message copied — paste it in your WhatsApp' : 'Couldn’t open the share menu'); }
+      } else {
+        toast(await copy(msg) ? 'Message copied — paste it in your WhatsApp' : 'Couldn’t copy here'); markSent();
+      }
+    });
     const cp = document.createElement('button'); cp.className = 'ghost'; cp.type = 'button'; cp.textContent = 'Copy';
     cp.setAttribute('aria-label', `Copy message for ${g.name}`);
     cp.addEventListener('click', async e => { e.stopPropagation(); toast(await copy(message(g, link)) ? 'Message copied — paste it in WhatsApp' : 'Couldn’t copy here'); });
@@ -572,6 +624,10 @@ famEl.addEventListener('change', refresh);
 baratAllEl.addEventListener('change', () => { baratOverride = {}; store('wedding-barat', '{}'); refresh(); });
 document.querySelectorAll('input[name=greet]').forEach(r => r.addEventListener('change', refresh));
 document.querySelectorAll('input[name=pv]').forEach(r => r.addEventListener('change', hostPreview));
+const savedApp = load('wedding-app');
+if(savedApp){ const r = document.querySelector(`input[name=app][value="${savedApp}"]`); if(r) r.checked = true; }
+sendHint();
+document.querySelectorAll('input[name=app]').forEach(r => r.addEventListener('change', () => { store('wedding-app', appVal()); sendHint(); renderList(); }));
 
 /* ---------- guest ---------- */
 function eventBlock(info, card){
